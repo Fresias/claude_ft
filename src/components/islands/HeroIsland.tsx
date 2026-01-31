@@ -1,10 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-
-gsap.registerPlugin(useGSAP);
+import { gsap, useGSAP } from "@/lib/gsap";
 
 interface HeroIslandProps {
   headline: string;
