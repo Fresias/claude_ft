@@ -1,7 +1,8 @@
 import { HeroIsland } from "@/components/islands/HeroIsland";
+import { CoffeeShowcase } from "@/components/islands/CoffeeShowcase";
 
 // Server Component — zero JS shipped for this file.
-// Only the <HeroIsland /> subtree hydrates on the client.
+// Only the island subtrees hydrate on the client.
 
 export default function Home() {
   return (
@@ -11,6 +12,9 @@ export default function Home() {
         headline="Islands Architecture"
         subheadline="RSC-First layout. Only this island ships JavaScript."
       />
+
+      {/* ── Coffee Showcase island: scroll-driven animations ── */}
+      <CoffeeShowcase />
 
       {/* ── Static RSC section: no JS at all ── */}
       <section
