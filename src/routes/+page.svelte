@@ -1,6 +1,7 @@
 <script lang="ts">
   import { css } from '../../styled-system/css'
   import Hero from '$lib/sections/Hero.svelte'
+  import OurStory from '$lib/sections/OurStory.svelte'
 
   const pageClass = css({
     backgroundColor: 'background',
@@ -16,4 +17,5 @@
 
 <main class={pageClass}>
   <Hero />
+  <OurStory />
 </main>
